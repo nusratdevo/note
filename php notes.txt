@@ -1,0 +1,425 @@
+php notes....
+1. constant variable: define();
+2. recursive functon: function call independently within the fnction in nested if-cluse.
+3. global variable scoop
+4. array syntext: $a=array(1,2,3); $a=[1,2,3]; $a[0]="red";$a[1]="blak";$a[2]="blue";
+           $a=['red','blue','black'];
+           for($i=0 ;$i<4; $i++){echo "$a[$i]";}
+5.multidymentional array in tabular form
+6. array  functions:
+       [ *array_count_values(), *count(),array_merge(),array_combine(),array_chunk(),array_collumn(),
+       array_reduce(),array_map(),sort(),list(),compact(),range(),explode(),implode()]
+
+PHP Array Functions
+Function	Description
+* array()	Creates an array
+* array_change_key_case()	Changes all keys in an array to lowercase or uppercase
+* array_chunk()	Splits an array into chunks of arrays
+* array_column()	Returns the values from a single column in the input array
+* array_combine()	Creates an array by using the elements from one "keys" array and one "values" array
+* array_count_values()	Counts all the values of an array
+* array_diff()	Compare arrays, and returns the differences (compare values only)
+* array_diff_assoc()	Compare arrays, and returns the differences (compare keys and values)
+* array_diff_key()	Compare arrays, and returns the differences (compare keys only)
+* array_diff_uassoc()	Compare arrays, and returns the differences (compare keys and values, using a user-defined key * comparison function)
+* array_diff_ukey()	Compare arrays, and returns the differences (compare keys only, using a user-defined key comparison function)
+* array_fill()	Fills an array with values
+* array_fill_keys()	Fills an array with values, specifying keys
+* array_filter()	Filters the values of an array using a callback function
+* array_flip()	Flips/Exchanges all keys with their associated values in an array
+* array_intersect()	Compare arrays, and returns the matches (compare values only)
+* array_intersect_assoc()	Compare arrays and returns the matches (compare keys and values)
+* array_intersect_key()	Compare arrays, and returns the matches (compare keys only)
+* array_intersect_uassoc()	Compare arrays, and returns the matches (compare keys and values, using a user-defined key comparison function)
+* array_intersect_ukey()	Compare arrays, and returns the matches (compare keys only, using a user-defined key comparison function)
+* array_key_exists()	Checks if the specified key exists in the array
+* array_keys()	Returns all the keys of an array
+* array_map()	Sends each value of an array to a user-made function, which returns new values
+* array_merge()	Merges one or more arrays into one array
+* array_merge_recursive()	Merges one or more arrays into one array recursively
+* array_multisort()	Sorts multiple or multi-dimensional arrays
+* array_pad()	Inserts a specified number of items, with a specified value, to an array
+* array_pop()	Deletes the last element of an array
+* array_product()	Calculates the product of the values in an array
+* array_push()	Inserts one or more elements to the end of an array
+* array_rand()	Returns one or more random keys from an array
+* array_reduce()	Returns an array as a string, using a user-defined function
+* array_replace()	Replaces the values of the first array with the values from following arrays
+* array_replace_recursive()	Replaces the values of the first array with the values from following arrays recursively
+* array_reverse()	Returns an array in the reverse order
+* array_search()	Searches an array for a given value and returns the key
+* array_shift()	Removes the first element from an array, and returns the value of the removed element
+* array_slice()	Returns selected parts of an array
+* array_splice()	Removes and replaces specified elements of an array
+* array_sum()	Returns the sum of the values in an array
+* array_udiff()	Compare arrays, and returns the differences (compare values only, using a user-defined key comparison function)
+* array_udiff_assoc()	Compare arrays, and returns the differences (compare keys and values, using a built-in function to * compare the keys and a user-defined function to compare the values)
+* array_udiff_uassoc()	Compare arrays, and returns the differences (compare keys and values, using two user-defined key comparison functions)
+* array_uintersect()	Compare arrays, and returns the matches (compare values only, using a user-defined key comparison function)
+* array_uintersect_assoc()	Compare arrays, and returns the matches (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
+* array_uintersect_uassoc()	Compare arrays, and returns the matches (compare keys and values, using two user-defined key comparison functions)
+* array_unique()	Removes duplicate values from an array
+* array_unshift()	Adds one or more elements to the beginning of an array
+* array_values()	Returns all the values of an array
+* array_walk()	Applies a user function to every member of an array
+* array_walk_recursive()	Applies a user function recursively to every member of an array
+* arsort()	Sorts an associative array in descending order, according to the value
+* asort()	Sorts an associative array in ascending order, according to the value
+* compact()	Create array containing variables and their values
+* count()	Returns the number of elements in an array
+* current()	Returns the current element in an array
+* each()	Deprecated from PHP 7.2. Returns the current key and value pair from an array
+* end()	Sets the internal pointer of an array to its last element
+* extract()	Imports variables into the current symbol table from an array
+* in_array()	Checks if a specified value exists in an array
+* key()	Fetches a key from an array
+* krsort()	Sorts an associative array in descending order, according to the key
+* ksort()	Sorts an associative array in ascending order, according to the key
+* list()	Assigns variables as if they were an array
+* natcasesort()	Sorts an array using a case insensitive "natural order" algorithm
+* natsort()	Sorts an array using a "natural order" algorithm
+* next()	Advance the internal array pointer of an array
+* pos()	Alias of current()
+* prev()	Rewinds the internal array pointer
+* range()	Creates an array containing a range of elements
+* reset()	Sets the internal pointer of an array to its first element
+* rsort()	Sorts an indexed array in descending order
+* shuffle()	Shuffles an array
+* sizeof()	Alias of count()
+* sort()	Sorts an indexed array in ascending order
+* uasort()	Sorts an array by values using a user-defined comparison function
+* uksort()	Sorts an array by keys using a user-defined comparison function
+* usort()	Sorts an array using a user-defined comparison function
+
+7. srting function: 
+        [str_split(),chunk_split(),strlen(),str_word_count(),
+
+*******************************************************************************************************
+PHP String Functions
+*crypt()	One-way string hashing
+*echo()	Outputs one or more strings
+*explode()	Breaks a string into an array
+*fprintf()	Writes a formatted string to a specified output stream
+*implode()	Returns a string from the elements of an array
+*join()	Alias of implode()
+*lcfirst()	Converts the first character of a string to lowercase
+*ltrim()	Removes whitespace or other characters from the left side of a string
+*chop()	Removes whitespace or other characters from the right end of a string
+*print()	Outputs one or more strings
+*printf()	Outputs a formatted string
+*rtrim()	 Removes whitespace or other characters from the right side of a string
+
+*ucfirst()	Converts the first character of a string to uppercase
+*ucwords()	Converts the first character of each word in a string to uppercase
+*strtolower()	Converts a string to lowercase letters
+*strtoupper()	Converts a string to uppercase letters
+*str_pad()	                     Pads a string to a new length
+*str_repeat()	Repeats a string a specified number of times
+*str_replace()	Replaces some characters in a string (case-sensitive)
+*str_ireplace()	Replaces some characters in a string (case-insensitive)
+*str_shuffle()	Randomly shuffles all characters in a string
+*strrev()	                     Reverses a string
+*str_split()	Splits a string into an array
+*chunk_split()	Splits a string into a series of smaller parts
+*str_word_count()	Count the number of words in a string
+*strstr()	Finds the first occurrence of a string inside another string (case-sensitive)
+*stristr()	Finds the first occurrence of a string inside another string (case-insensitive)
+*strlen()	Returns the length of a string
+
+*stripos()	Returns the position of the first occurrence of a string inside another string (case-insensitive)
+*strpos()	Returns the position of the first occurrence of a string inside another string (case-sensitive)
+*strripos()	Finds the position of the last occurrence of a string inside another string (case-insensitive)
+*strrpos()	Finds the position of the last occurrence of a string inside another string (case-sensitive)
+
+*substr_count()	Counts the number of times a substring occurs in a string
+*substr_replace()	Replaces a part of a string with another string
+*substr()	Returns a part of a string
+*strcmp()	Compares two strings (case-sensitive)
+*strcasecmp()	Compares two strings (case-insensitive)
+*strnatcasecmp()	Compares two strings using a "natural order" algorithm (case-insensitive)
+*strnatcmp()	Compares two strings using a "natural order" algorithm (case-sensitive)
+
+*strip_tags()	Strips HTML and PHP tags from a string
+*wordwrap()	Wraps a string to a given number of characters
+*stripcslashes()	Unquotes a string quoted with addcslashes()
+*addcslashes()	Returns a string with backslashes in front of the specified characters
+*stripslashes()	Unquotes a string quoted with addslashes()
+*addslashes()	Returns a string with backslashes in front of predefined characters
+*html_entity_decode()	Converts HTML entities to characters
+*htmlentities()	Converts characters to HTML entities
+*htmlspecialchars_decode()	Converts some predefined HTML entities to characters
+*htmlspecialchars()	Converts some predefined characters to HTML entities
+*md5()	Calculates the MD5 hash of a string
+*convert_uudecode()	Decodes a uuencoded string
+*convert_uuencode()	Encodes a string using the uuencode algorithm
+*sha1()	                      Calculates the SHA-1 hash of a string
+*sha1_file()	                     Calculates the SHA-1 hash of a file
+*similar_text()	Calculates the similarity between two strings
+*bin2hex()	Converts a string of ASCII characters to hexadecimal values
+*hex2bin()	Converts a string of hexadecimal values to ASCII characters
+*chr()	Returns a character from a specified 
+*ord()           Returns ASCII value of first cherecter in the word
+
+
+convert_cyr_string()	Converts a string from one Cyrillic character-set to another
+count_chars()	Returns information about characters used in a string
+get_html_translation_table()	Returns the translation table used by htmlspecialchars() and htmlentities()
+str_getcsv()	Parses a CSV string into an array
+strchr()	Finds the first occurrence of a string inside another string (alias of strstr())
+strcoll()	Compares two strings (locale based string comparison)
+strcspn()	Returns the number of characters found in a string before any part of some specified characters are found
+strspn()	Returns the number of characters found in a string that contains only characters from a specified charlist
+strtok()	Splits a string into smaller strings
+strtr()	                Translates/replace certain characters in a string
+substr_compare()	Compares two strings from a specified start position (binary safe and optionally case-sensitive)
+strncasecmp()	String comparison of the first n characters (case-insensitive)
+strncmp()	String comparison of the first n characters (case-sensitive)
+strpbrk()	Searches a string for any of a set of characters
+strrchr()	Finds the last occurrence of a string inside another string
+********************************************************
+
+PHP Math Functions
+*is_finite()	Checks whether a value is finite or not
+*is_infinite()	Checks whether a value is infinite or not
+*is_nan()	Checks whether a value is 'not-a-number'
+
+*max()	Returns the highest value in an array, or the highest value of several specified values
+*min()	Returns the lowest value in an array, or the lowest value of several specified values
+*floor()	Rounds a number down to the nearest integer
+*ceil()	Rounds a number up to the nearest integer
+*abs()	Returns the absolute (positive) value of a number
+*rand()	Generates a random integer
+*round()	Rounds a floating-point number
+*mt_rand()	Generates a random integer using Mersenne Twister algorithm
+*lcg_value()	Returns a pseudo random number in a range between 0 and 1
+*sqrt()	Returns the square root of a number
+*pow()	Returns x raised to the power of y
+*intdiv()	Performs integer division
+*pi()	Returns the value of PI
+*mt_getrandmax()	Returns the largest possible value returned by mt_rand()
+
+
+****************************************************************************************
+
+MySQL String Functions
+UPPER()/UCASE()	                   Converts a string to upper-case
+LOWER()/LCASE()	                   Converts a string to lower-case
+CONCAT()	                    Adds two or more expressions together
+CONCAT_WS()	                    Adds two or more expressions together with a separator
+LENGTH()	                    Returns the length of a string (in bytes)
+CHAR_LENGTH()	                     Returns the length of a string (in characters)
+CHARACTER_LENGTH()	Returns the length of a string (in characters)
+TRIM()	                                   Removes leading and trailing spaces from a string
+LTRIM()	                                   Removes leading spaces from a string
+RTRIM()	                                   Removes trailing spaces from a string
+RPAD()	Right-pads a string with another string, to a certain length
+LPAD()	Left-pads a string with another string, to a certain length
+REPEAT()	                   Repeats a string as many times as specified
+REPLACE	()               Replaces all occurrences of a substring within a string, with a new substring
+REVERSE()	Reverses a string and returns the result
+SUBSTRING/SUBSTR()	    Extracts a substring from a string (starting at any position)
+LEFT()	                                Extracts a number of characters from a string (starting from left)
+RIGHT()	                                 Extracts a number of characters from a string (starting from right)
+POSITION()	            Returns the position of the first occurrence of a substring in a string
+INSTR()	                                  Returns the position of the first occurrence of a string in another string
+LOCATE()	                                 Returns the position of the first occurrence of a substring in a string
+
+FIELD()                    	Returns the index position of a value in a list of values
+FIND_IN_SET()	Returns the position of a string within a list of strings
+FORMAT()	Formats a number to a format like "#,###,###.##", rounded to a specified number of decimal places
+STRCMP()	Compares two strings
+HEX(str)
+SUBSTRING_INDEX	()                      Returns a substring of a string before a specified number of delimiter occurs
+MID()                                       	Extracts a substring from a string (starting at any position)
+SPACE()	Returns a string of the specified number of space characters
+ASCII()	                      Returns the ASCII value for the specific character
+INSERT()          	Inserts a string within a string at the specified position and for a certain number of characters
+*******************************************************************************************
+Javascript Array methods: 
+*pop()	Removes the last element from an array and returns that element.
+*push()	Adds one or more elements at the end of an array and returns the new length of the array.
+*shift()	Removes the first element from an array and returns that element.
+*unshift()	Adds one or more elements to the front of an array and returns the new length of the array.
+*reverse()	Reverses the elements of an array. Element at last index will be first and element at 0 index will be last.
+*sort()	Sorts the elements of an array.
+*concat()	Returns new array by combining values of an array that is specified as parameter with existing array values.
+*join()	Returns string of all the elements separated by the specified separator
+
+* find(callbackFunction): return the value of first element of an arary that pass the condition
+*filter()	Returns a new array with all the elements that satisfy a condition specified in the callback function.
+*map()	Creates a new array with the results of calling a provided function on every element in this array.
+*reduce()	Pass two elements simultaneously in the callback function (till it reaches the last element) and returns a single value.
+*forEach()	Executes a callback function for each elements of an array.
+*slice(start,end)	Returns a new array with specified start to end elements.
+*splice(start,deleteVal, valueInsert)	Adds and/or removes elements from an array.
+*Array.isArray(),  Returns true/false if  array or not.
+*toString(),
+
+*fill(), fill static element to an array
+*entries(),  
+*includes(search item)           item      exist or not return true/false
+*indexOf()	                      Returns the index of the first occurrence of the specified element in the array, or -1 if it is not found.
+*lastIndexOf()	Returns the index of the last occurrence of the specified element in the array, or -1 if it is not found.
+*every()	Returns true or false if every element in the specified array satisfies a condition specified in the callback function. Returns false even if single element does not satisfy the condition.
+*some()	Returns true if at least one element in this array satisfies the condition in the callback function.
+ 
+
+copyWithin()
+flat()
+flatMap()
+Array.from()
+groupBy()
+reduceRight()
+keys()
+Array.of()
+toLocaleString()
+toSource()
+valueOf(),
+**************************************************************************************************
+ Js String Methods
+
+*slice(startNumber, endNumber)	Extracts a section of a string based on specified starting and ending index and returns a new string.
+*split(separatorString, limitNumber)	Splits a String into an array of strings by separating the string into substrings based on specified separator. Regular expression can also be used as separator.
+*repeat(no of repeat)
+*length                               The length property returns the length of a string
+*toLowerCase()	Returns lower case string value.
+*toUpperCase()	Returns upper case string value.
+*concat() joins two or more strings
+*startsWith(item)   Search for exact match in start eturn true/false
+*endsWith(item) Search for exact match in end eturn true/false
+*search(item/RegExp)	Search for a match based on specified regular expression. return position/index
+*match(RegExp)	Search a string for a match using specified regular expression. Returns all matching and make an array.
+*includes(search item)           item exist or not return true/false
+*replace(searchValue, replaceValue):replaces a specified value with another value in a string:
+*trim() method removes whitespace from both sides of a string
+
+*padStart() and padEnd() to support padding at the beginning and at the end of a string.
+*charAt(position)	Returns the character at the specified position (in Number).
+*charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+*valueOf()	Returns the primitive value of the specified string object.
+*toString()	Returns the value of String object.
+*substr(start, length)	Returns the characters in a string from specified starting position through the specified number of characters (length).
+*substring(start, end)	Returns the characters in a string between start and end indexes.
+*localeCompare(string,position)	Compares two strings in the current locale.
+***************************************************************************
+ JavaScript number methods with their description.
+
+Methods	Description
+Number.isFinite()	                     checj\h condition It determines whether the given value is a finite number. return true/false
+Number.isInteger()	                      It determines whether the given value is an integer.return true/false
+NaN is a JavaScript reserved word indicating that a number is not a legal number
+Number()                  can be used to convert JavaScript variables to numbers
+parseFloat()	It converts the given string into a floating point number.
+parseInt()	                      It converts the given string into an integer number.if there han no nuber return NaN
+toExponential()	It returns the string that represents exponential notation of the given number.
+toFixed()	It returns the string that represents a number with exact digits after a decimal point.
+toPrecision()	It returns the string representing a number of specified precision.
+toString()	It returns the given number in the form of string.
+valueOf() returns a number as a number.
+
+***********************************************************************************
+
+
+PHP Filesystem Functions
+Function	Description
+
+chgrp()	Changes the file group
+chmod()	Changes the file mode
+chown()	Changes the file owner
+clearstatcache()	Clears the file status cache
+disk_free_space()	Returns the free space of a filesystem or disk
+disk_total_space()	Returns the total size of a filesystem or disk
+diskfreespace()	Alias of disk_free_space()
+feof()	Checks if the "end-of-file" (EOF) has been reached for an open file
+fflush()	Flushes buffered output to an open file
+fgetc()	Returns a single character from an open file
+fgetcsv()	Returns a line from an open CSV file
+fgets()	Returns a line from an open file
+fgetss()	Deprecated from PHP 7.3. Returns a line from an open file - stripped from HTML and PHP tags
+filectime()	Returns the last change time of a file
+filegroup()	Returns the group ID of a file
+fileinode()	Returns the inode number of a file
+filemtime()	Returns the last modification time of a file
+fileowner()	Returns the user ID (owner) of a file
+fileperms()	Returns the file's permissions
+filesize()	Returns the file size
+filetype()	Returns the file type
+flock()	Locks or releases a file
+fnmatch()	Matches a filename or string against a specified pattern
+fpassthru()	Reads from the current position in a file - until EOF, and writes the result to the output buffer
+fputcsv()	Formats a line as CSV and writes it to an open file
+fputs()	Alias of fwrite()
+fscanf()	Parses input from an open file according to a specified format
+fseek()	Seeks in an open file
+fstat()	Returns information about an open file
+ftell()	Returns the current position in an open file
+ftruncate()	Truncates an open file to a specified length
+linkinfo()	Returns information about a hard link
+lstat()	Returns information about a file or symbolic link
+set_file_buffer()	Alias of stream_set_write_buffer(). Sets the buffer size for write operations on the given file
+stat()	Returns information about a file
+symlink()	Creates a symbolic link
+tempnam()	Creates a unique temporary file
+*************************************************************************************************
+
+copy()	Copies a file
+delete()	See unlink()
+dirname()	Returns the directory name component of a path
+file()	Reads a file into an array
+file_exists()	Checks whether or not a file or directory exists
+file_get_contents()	Reads a file into a string
+file_put_contents()	Writes data to a file
+fileatime()	Returns the last access time of a file
+
+basename()	Returns the filename component of a path
+fopen()	Opens a file or URL
+fclose()	Closes an open file
+fread()	Reads from an open file (binary-safe)
+fwrite()	Writes to an open file (binary-safe)
+glob()	Returns an array of filenames / directories matching a specified pattern
+is_dir()	Checks whether a file is a directory
+is_executable()	Checks whether a file is executable
+is_file()	Checks whether a file is a regular file
+is_link()	Checks whether a file is a link
+is_readable()	Checks whether a file is readable
+is_uploaded_file()	Checks whether a file was uploaded via HTTP POST
+is_writable()	Checks whether a file is writable
+is_writeable()	Alias of is_writable()
+lchgrp()	Changes the group ownership of a symbolic link
+lchown()	Changes the user ownership of a symbolic link
+link()	Creates a hard link
+mkdir()	Creates a directory
+move_uploaded_file()	Moves an uploaded file to a new location
+parse_ini_file()	Parses a configuration file
+parse_ini_string()	Parses a configuration string
+pathinfo()	Returns information about a file path
+pclose()	Closes a pipe opened by popen()
+popen()	Opens a pipe
+readfile()	Reads a file and writes it to the output buffer
+readlink()	Returns the target of a symbolic link
+realpath()	Returns the absolute pathname
+realpath_cache_get()	Returns realpath cache entries
+realpath_cache_size()	Returns realpath cache size
+rename()	Renames a file or directory
+rewind()	Rewinds a file pointer
+rmdir()	Removes an empty directory
+tmpfile()	Creates a unique temporary file
+touch()	Sets access and modification time of a file
+umask()	Changes file permissions for files
+unlink()	Deletes a file
+
+
+**********************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+

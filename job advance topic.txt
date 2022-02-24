@@ -1,0 +1,26 @@
+Job requirement
+•	Design, build, and maintain efficient, reusable, and reliable code and Integration of data storage solutions
+•	Ensure high quality, accuracy and on-time delivery on all web development projects 
+.       Ability to work individually and independently with minimal supervision
+
+·       Good knowledge in database management such as SQL, MySQL, SQL lite.Normalization,
+.       laravel Request injection,
+.       permission based dashboard,laravel apite.
+
+·       General understanding about ERP systems. HRM, Accounting module.
+
+•	Export PDF/Excel, Import Excel,  Print/PDF View
+
+.       Laravel's Localisation (Language translation)
+
+•	Social Login In Laravel (Facebook, Twitter, Google, Instagram, LinkedIn)
+
+·       Must have experience in Payment Gateway Implementation like SSL, bKash, Nagad etc./ international Online  Payment method : Paypal, Amazon Pay, Apple Pay, Stripe, 2Checkout, PayUmoney.
+
+·       Must have experience in Bulk Email/SMS Sending ( Email Queue/ SMS Gateway Integration)
+
+·       Revise, edit, proofread & optimize web content
+
+.	- Monthly Subscription Manage
+
+#      Experience of deployment in Cloud infrastructure (e.g., AWS, Digital Ocean, Azure and GCP) is a plus

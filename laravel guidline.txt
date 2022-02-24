@@ -1,0 +1,123 @@
+laravel biginer guidline:
+( * Routing and Controllers: Basics, Callback Functions and Route::view(), Route Groups, 
+ * Blade Basics: Blade If-Else and Loop Structures, Blade Components.
+ * Auth Basics: Starter Kits: Breeze (Tailwind) or Laravel UI (Bootstrap), 
+Auth Middleware, Determining If The Current User Is Authenticated
+Blade Authentication Directives
+ *Eloquent Relationships: belongsTo / hasMany / belongsToMany:
+ * Eager Loading and N+1 Query Problem
+)
+
+Advanced Beginner Level:
+( * Routing Advanced:Route Model Binding.
+ * Middlewar: Create Custom Middleware Class
+ * Database Advanced: 
+        Database Seeders and Factories,
+        Eloquent Accessors and Mutators
+        Eloquent Collections, Soft Deletes.
+        Eloquent Query Scopes ,
+        Polymorphic relationships, 
+		                                                        seeding/factories, query scops,relationships
+		                                                         Roles/Permissions,email sending,error handle/logging
+ * Auth Advanced Authorization: 
+           Roles/Permissions, Gates, Policies,.
+           Authentication: Email Verification
+		   Authorization: Extra Packages - Spatie Permission, Bouncer, etc
+  * API Basics:
+        API Routes and Controllers, 
+        Working with API Clients: Postman or Alternatives, API Auth with Sanctum, 
+        API Eloquent Resources, 
+ * Debugging Errors: 
+         Log Files in Laravel , 
+		 API Error Handling and Status Codes
+         Try-Catch and Laravel Exceptions, 
+         Customizing Error Pages and Messages.
+		  Local Debugging Tools: barryvdh/laravel-debugbar, Telescope, Spatie Ray (Premium Tool), 
+ * Sending Email: 
+       Mailables and Mail Facade,
+       Configure Drivers/Services: Mailgun, Mailtrap, etc,
+       Notifications System: Email, SMS, Slack, etc..
+ * Automated Testing with PHPUnit
+ * Git Version Control, Deployment on Live Servers: What Server is Needed to Deploy Laravel Projects
+   How we Deploy Laravel: Branches, Staging Servers, Forge and Envoyer
+)
+
+ Job Post Requerment
+
+*Working knowledge on push notifications (Socket and Laravel Broadcasting)
+* apiResource Route, Resource Controller, Resource & Collection json response
+* Monthly subcription billing
+
+
+
+
+
+Mid Level:: Master all Laravel features with 3-5 years of practical experience
+( 
+* API Advanced:
+          Upload Files via API	📄 Laravel API: How to Upload File from Vue.js
+          API Versioning
+          API with OAuth and Laravel Passport	📖 Laravel Passport ,Sanctum
+         Only-API Projects with Front-end like Vue.js	🔠 Vue.js + Laravel: CRUD with SPA
+         Only-API Projects with Mobile Apps                             📄 Using Sanctum to authenticate a mobile app
+         Laravel API Documentation with OpenAPI/Swagger, Scribe: New Package for Laravel API Documentation
+
+* Routing Extra Features: 
+                  Route Caching	
+                  Rate Limiting
+  * Database/Eloquent Extra Features:  
+               Model Observers,
+               Eloquent Observers or Events Listeners? Which is Better?
+  * Various Extra Laravel Features: 
+                Custom Blade Directives,
+                Events and Listeners,
+                Login with X: Laravel Socialite, 
+                Creating Artisan Commands, 
+                Task Scheduling, 
+                Real-time: Broadcasting, Echo and Pusher
+
+  
+  * Jobs and Queues: Queueable Classes and Jobs	
+       📖 Creating Jobs
+       📖 Queueing Notifications
+       📖 Queued Event Listeners
+       📖 Queueing Mail
+      Job Dispatching, Batching and Chaining, 
+	  Processing Failed Job, 
+	  Configuring Queues: Drivers, Redis, Supervisor
+**************************************************************************************************************
+ * Payments: 
+Laravel Cashier with Stripe/Paddle	📖 Laravel Cashier (Stripe) 📖 Laravel Cashier (Paddle)
+Custom Payment Providers: PayPal, Mollie: 📄 Subscription billing with Laravel Cashier for Mollie
+📄 How To Integrate Paypal Payment Gateway In Laravel
+
+ * Full-Text Search	
+Laravel Scout	📖 Laravel Scout
+Drivers: ElasticSearch, Algolia or MeiliSearch	
+📄 ElasticSearch Driver for Laravel Scout 
+📖 Algolia: Scout Extended
+📄 Full-Text Search with MeiliSearch and Laravel Scout
+
+  * Laravel Packages :	📖 Laravel Package Development
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
